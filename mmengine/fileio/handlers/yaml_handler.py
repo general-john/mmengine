@@ -3,7 +3,7 @@ import yaml
 
 try:
     from yaml import CDumper as Dumper  # type: ignore
-    from yaml import CLoader as Loader  # type: ignore
+    from yaml import CSafeLoader as Loader  # type: ignore
 except ImportError:
     from yaml import Loader, Dumper  # type: ignore
 
